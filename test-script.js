@@ -201,7 +201,7 @@ const testData = [
         id: "ctx3",
         areaName: "Factores y Situaciones Vitales",
         categoryKey: "factoresEstres",
-        title: "¿Estás atravesando o has vivido recientemente alguna de las siguientes situaciones? (Selecciona hasta 3):",
+        title: "¿Estás atravesando o has vivido recientemente alguna de las siguientes situaciones? (Selecciona las que apliquen):",
         options: [
           "Ruptura amorosa o separación",
           "Infidelidad o conflicto grave de pareja",
@@ -512,10 +512,6 @@ function actualizarChecklist(categoryKey, input) {
   } else if (input.checked) {
     const noneInput = [...group.querySelectorAll('input[type="checkbox"]')].find(option => option.value === noneOption);
     if (noneInput) noneInput.checked = false;
-    if (categoryKey === "factoresEstres" && selectedInputs.length > 3) {
-      input.checked = false;
-      window.alert("Puedes seleccionar hasta 3 situaciones.");
-    }
   }
 
   respuestas[categoryKey] = [...group.querySelectorAll('input[type="checkbox"]:checked')].map(option => option.value);
