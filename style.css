@@ -142,16 +142,22 @@ h2 {
     right: 32px;
     background-color: #25D366;
     color: white;
-    width: 60px;
+    width: auto;
+    min-width: 60px;
     height: 60px;
-    border-radius: 50%;
+    padding: 0 18px;
+    border-radius: 999px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
     box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
     z-index: 9999;
     transition: var(--transition-smooth);
     text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
 }
 
 .whatsapp-float:hover {
@@ -163,6 +169,11 @@ h2 {
 .channel-icon svg,
 .btn svg {
     flex-shrink: 0;
+}
+
+a svg,
+button svg {
+    pointer-events: none;
 }
 
 
@@ -245,6 +256,7 @@ h2 {
 
 .menu-toggle {
     display: none;
+    position: relative;
     width: 44px;
     height: 44px;
     background: none;
@@ -256,6 +268,20 @@ h2 {
     justify-content: center;
     flex-direction: column;
     gap: 5px;
+}
+
+.menu-toggle-line,
+.menu-toggle-label {
+    pointer-events: none;
+}
+
+.menu-toggle-label {
+    position: absolute;
+    left: calc(100% + 8px);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.85rem;
+    white-space: nowrap;
 }
 
 .menu-toggle:hover,
@@ -1475,8 +1501,8 @@ h2 {
     .whatsapp-float {
         bottom: 20px;
         right: 20px;
-        width: 52px;
         height: 52px;
-        font-size: 26px;
+        padding: 0 14px;
+        font-size: 0.85rem;
     }
 }
