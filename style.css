@@ -148,6 +148,23 @@ h2 {
     transform: translateY(-2px);
 }
 
+.btn-service {
+    background-color: #A95E3D;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(169, 94, 61, 0.24);
+}
+
+.btn-service:hover {
+    background-color: #85452D;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(133, 69, 45, 0.32);
+}
+
+.btn-service:focus-visible {
+    outline: 3px solid #85452D;
+    outline-offset: 3px;
+}
+
 
 /* ==========================================================================
    BOTÓN FLOTANTE DE WHATSAPP E INYECCIÓN VECTORIAL DE ICONOS
@@ -479,6 +496,24 @@ button svg {
     margin-top: 32px;
 }
 
+.website-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(76, 136, 124, 0.2);
+}
+
+.website-offer p {
+    max-width: 100%;
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
 /* ==========================================================================
    3. ÁREAS DE ATENCIÓN (ETIQUETAS REBOZANTES)
    ========================================================================== */
@@ -488,7 +523,7 @@ button svg {
 
 .tags-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
     gap: 16px;
     margin-bottom: 40px;
 }
@@ -598,7 +633,7 @@ button svg {
 
 .cards-triple-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
 }
 
@@ -621,7 +656,13 @@ button svg {
 
 .features-card {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.features-card h3 {
+    margin: 0 0 24px;
+    text-align: center;
 }
 
 .features-list {
@@ -630,18 +671,20 @@ button svg {
     flex-direction: column;
     gap: 20px;
     width: 100%;
+    min-width: 0;
 }
 
 .features-list li {
-    display: flex;
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
     align-items: baseline;
-    gap: 4px;
+    gap: 8px;
     font-size: 0.95rem;
     color: var(--text-main);
     border-bottom: 1px solid rgba(76, 136, 124, 0.1);
     padding-bottom: 12px;
     text-align: left;
-    white-space: nowrap;
+    overflow-wrap: anywhere;
 }
 
 .features-list li:last-child {
@@ -1035,7 +1078,7 @@ button svg {
 
 .booking-channels-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Cambiado de 4 a 3 columnas perfectas */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px; /* Espaciado uniforme entre las 3 tarjetas */
 }
 
@@ -1057,6 +1100,7 @@ button svg {
     min-height: 280px;
     transition: var(--transition-smooth);
     box-shadow: none; /* Quitamos sombras pesadas para que se integre al fondo */
+    min-width: 0;
 }
 
 /* Evitamos que el efecto hover le vuelva a poner el fondo blanco traslúcido */
@@ -1133,6 +1177,8 @@ button svg {
 /* Espaciado del botón de acción en la parte inferior */
 .channel-btn-action {
     margin-top: 4px;
+    white-space: normal;
+    text-align: center;
 }
 .channel-action {
     font-size: 0.85rem;
@@ -1299,6 +1345,61 @@ button svg {
     gap: 16px;
 }
 
+.service-cta-section {
+    padding: 0 24px 56px;
+}
+
+.service-cta-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 48px 32px;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, #85452D, #A95E3D);
+    box-shadow: 0 16px 40px rgba(101, 53, 36, 0.24);
+    color: #ffffff;
+    text-align: center;
+}
+
+.service-cta-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #FFE1D1;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.service-cta-card h2 {
+    max-width: 700px;
+    margin: 0 auto 12px;
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.service-cta-card p {
+    max-width: 700px;
+    margin: 0 auto 24px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.05rem;
+}
+
+.btn-service-final {
+    background: #ffffff;
+    color: #85452D;
+    box-shadow: 0 4px 12px rgba(65, 34, 24, 0.2);
+}
+
+.btn-service-final:hover {
+    background: #FFE1D1;
+    color: #653524;
+    transform: translateY(-2px);
+}
+
+.btn-service-final:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+}
+
 /* PIE DE PÁGINA BASE */
 .footer-bottom {
     border-top: 1px solid rgba(76, 136, 124, 0.1);
@@ -1312,6 +1413,54 @@ button svg {
 .footer-bottom p + p {
     margin-top: 6px;
     font-size: 0.82rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 18px auto 0;
+    padding: 0 16px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 9px 16px;
+    border: 1px solid rgba(76, 136, 124, 0.2);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
+    color: var(--text-main);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.social-link svg {
+    width: 18px;
+    height: 18px;
+}
+
+.social-link-instagram:hover {
+    border-color: #C13584;
+    color: #C13584;
+    transform: translateY(-2px);
+}
+
+.social-link-facebook:hover {
+    border-color: #1877F2;
+    color: #1877F2;
+    transform: translateY(-2px);
+}
+
+.social-link:focus-visible {
+    outline: 3px solid var(--primary-hover);
+    outline-offset: 3px;
 }
 
 .contact-note {
@@ -1328,7 +1477,7 @@ button svg {
 @media (max-width: 1024px) {
     /* La cuadrícula pasa a tener un sistema ordenado de 2 columnas */
     .booking-channels-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 20px;
     }
 
@@ -1342,7 +1491,7 @@ button svg {
 @media (max-width: 520px) {
     /* En teléfonos pequeños, rompemos las columnas y todo se apila de forma vertical natural */
     .booking-channels-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
     
     /* En móviles puros regresa a medir una columna de ancho */
@@ -1353,7 +1502,7 @@ button svg {
 
 @media (max-width: 900px) {
     .cards-triple-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
 }
 
@@ -1487,6 +1636,29 @@ button svg {
     .hero-buttons .btn, .closure-buttons .btn {
         width: 100%;
         max-width: 360px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .website-offer .btn {
+        width: 100%;
+        max-width: 360px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .service-cta-card {
+        padding: 36px 24px;
+    }
+
+    .service-cta-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-cta-card .btn {
+        width: 100%;
+        max-width: 360px;
+        white-space: normal;
     }
 
     .section-title-block h2 {

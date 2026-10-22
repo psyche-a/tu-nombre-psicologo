@@ -8,7 +8,7 @@ Sitio estático adaptable a móviles con secciones de presentación, servicios, 
 2. Cambia `contactEmail` en `script.js`. Ese correo actualiza los enlaces de contacto, la dirección visible y el correo para consultar citas.
 3. Sustituye `logo1.png`, `logo2.png` y `profile.jpg` por recursos que tengas permiso de utilizar; ajusta el texto alternativo de la fotografía en `index.html`.
 4. Revisa honorarios, duración, modalidad, privacidad, límites de atención y la información de emergencia según tu ubicación y práctica profesional.
-5. Si agregas un sistema de analítica, agenda o redes sociales, usa únicamente cuentas propias y actualiza la política de privacidad y las cabeceras de seguridad según corresponda.
+5. Sustituye los enlaces de ejemplo de Instagram y Facebook al final de `index.html` por los perfiles profesionales reales. Si agregas analítica, agenda u otros servicios, usa únicamente cuentas propias y actualiza la política de privacidad y las cabeceras de seguridad según corresponda.
 
 El nombre y los textos del perfil son contenido demostrativo, no acreditan identidad, titulación, licencia ni experiencia profesional. La autoexploración es material informativo y no está validada como instrumento clínico; no sustituye una evaluación profesional ni servicios de emergencia.
 
