@@ -260,14 +260,19 @@
   }
   .psyche-question-box p { font-weight: 600; color: #1e293b; margin-bottom: 15px; font-size: 16px; }
 
-  .psyche-options { display: flex; gap: 15px; }
+  .psyche-question-instructions { margin-bottom: 18px; color: #526b63; }
+  .psyche-options { display: flex; flex-wrap: wrap; gap: 10px; }
   .psyche-opt-btn {
-    flex: 1; padding: 12px; border: 2px solid #cbd5e1;
+    flex: 1 1 120px; padding: 12px; border: 2px solid #cbd5e1;
     background: white; border-radius: 8px; font-weight: 600;
     cursor: pointer; transition: all 0.2s; text-align: center; color: #475569;
   }
   .psyche-opt-btn:hover { border-color: var(--psyche-accent); color: var(--psyche-primary); }
   .psyche-opt-btn.selected { background: var(--psyche-primary); color: white; border-color: var(--psyche-primary); }
+  .psyche-question-box.needs-answer { border-color: #bb6a58; }
+  .psyche-validation-message { display: none; margin: 12px 0 0 !important; color: #a44d3b !important; font-size: 13px !important; }
+  .psyche-question-box.needs-answer .psyche-validation-message { display: block; }
+  .psyche-urgent-note { margin-top: 16px !important; color: #526b63 !important; font-size: 13px !important; text-align: center !important; }
 
   .psyche-checkbox-group { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
   .psyche-checkbox-label {
@@ -396,7 +401,7 @@
 </style>
 
 <div id="psycheTestModal" class="psyche-modal-overlay" role="presentation">
-  <div class="psyche-modal-content" role="dialog" aria-modal="true" aria-label="Test de bienestar Psyche" tabindex="-1">
+  <div class="psyche-modal-content" role="dialog" aria-modal="true" aria-label="Autoexploración de bienestar PSYCHE" tabindex="-1">
     <div class="psyche-test-header">
       <img class="psyche-header-logo" src="logo1.png" alt="Psyche">
       <div class="psyche-progress-wrap">
@@ -405,6 +410,6 @@
       </div>
       <button type="button" class="psyche-close-btn" onclick="cerrarTestModal()" aria-label="Cerrar test" title="Cerrar test y volver a la página">&times;</button>
     </div>
-    <div id="psycheTestContainer"></div>
+    <div id="psycheTestContainer" aria-live="polite" aria-atomic="true"></div>
   </div>
 </div>

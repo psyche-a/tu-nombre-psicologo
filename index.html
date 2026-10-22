@@ -1,67 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NJZ69K7J');</script>
-<!-- End Google Tag Manager -->
-
-
-
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro de Bienestar Psicológico | PSYCHE</title>
+    <meta name="description" content="Atención psicológica online para cuidar tu bienestar emocional, comprender lo que estás viviendo y avanzar a tu propio ritmo.">
+    <meta name="theme-color" content="#D9E9E4">
+    <title>PSYCHE | Psicología y bienestar emocional</title>
     <link rel="icon" type="image/png" href="logo1.png">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
-
-   
 </head>
 <body>
+    <a href="#inicio" class="skip-link">Saltar al contenido</a>
 
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJZ69K7J"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
- 
+    <a href="#contacto" class="whatsapp-float" aria-label="Ir a información de contacto">
+        <i data-lucide="message-circle" aria-hidden="true"></i>
+        <span>Hablemos</span>
+    </a>
 
-    <!-- Botón Flotante de WhatsApp  -->
-
-<a href="https://api.whatsapp.com/send/?phone=50362631168&text=%C2%A1Hola%21%20%F0%9F%91%8B%20Vi%20la%20p%C3%A1gina%20web%20de%20tu%20consultorio%20y%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20psicol%C3%B3gica.%20%F0%9F%92%9A&type=phone_number&app_absent=0" class="whatsapp-float" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">
-    <i data-lucide="message-circle" aria-hidden="true"></i>
-    <span>WhatsApp</span>
-</a>
-
-
-
-
-    <!-- ENCABEZADO -->
     <header class="main-header">
-        <img class="header-logo header-logo-primary" src="logo1.png" alt="Logo de PSYCHE">
-        <img class="header-logo header-logo-secondary" src="logo2.png" alt="Logo de la organización">
+        <img class="header-logo header-logo-primary" src="logo1.png" alt="Logotipo de PSYCHE">
+        <img class="header-logo header-logo-secondary" src="logo2.png" alt="" aria-hidden="true">
         <div class="header-top">
-            <h1>PSYCHE | CENTRO DE BIENESTAR PSICOLÓGICO </h1>
+            <h1>PSYCHE | PSICOLOGÍA Y BIENESTAR</h1>
             <p class="subtitle">ATENCIÓN PSICOLÓGICA ONLINE</p>
         </div>
-        
+
         <div class="header-nav-container">
             <div class="profile-brand">
-                <span class="brand-name">Adonis Lozano</span>
-                <span class="brand-title">Psicólogo</span>
+                <span class="brand-name">Valeria Montes</span>
+                <span class="brand-title">Psicóloga</span>
             </div>
 
-            <!-- Menú Hamburguesa para Móviles -->
             <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
                 <span class="menu-toggle-line"></span>
                 <span class="menu-toggle-line"></span>
@@ -69,476 +41,255 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <span class="menu-toggle-label" aria-hidden="true">Menú</span>
             </button>
 
-            <nav class="nav-menu" id="navMenu">
+            <nav class="nav-menu" id="navMenu" aria-label="Navegación principal">
                 <a href="#inicio" class="nav-link active">Inicio</a>
-                <a href="#terapia" class="nav-link">Terapia Online</a>
-                <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+                <a href="#terapia" class="nav-link">Terapia online</a>
+                <a href="#sobre-mi" class="nav-link">Sobre mí</a>
                 <a href="#faq" class="nav-link">Preguntas</a>
                 <div class="nav-buttons">
-                    <a href="https://calendar.app.google/aoNeNgeWQJg1RZPw7" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i data-lucide="calendar-days" aria-hidden="true"></i> Agendar cita</a>
-                    <a href="https://api.whatsapp.com/send/?phone=50362631168&text=%C2%A1Hola%21%20%F0%9F%91%8B%20Vi%20la%20p%C3%A1gina%20web%20de%20tu%20consultorio%20y%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20psicol%C3%B3gica.%20%F0%9F%92%9A&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">Contactar</a>
-                    <a href="https://www.instagram.com/psyche._.a/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary"><i data-lucide="instagram" aria-hidden="true"></i> Follow Me</a>
+                    <a href="#contacto" class="btn btn-sm btn-primary"><i data-lucide="calendar-days" aria-hidden="true"></i> Solicitar una cita</a>
+                    <a href="#contacto" class="btn btn-sm btn-secondary">Contacto</a>
                 </div>
             </nav>
         </div>
-        <div class="header-tagline">
-            <span>TU ESPACIO PSYCHE</span>
-        </div>
+        <div class="header-tagline"><span>UN ESPACIO PARA TI</span></div>
     </header>
 
     <main class="main-content" id="inicio">
-        
-        <!-- 2. PRESENTACIÓN PRINCIPAL -->
         <section class="hero-section container">
             <div class="hero-card">
-                <h2>Un espacio creado para ti</h2>
-                <p>Atención psicológica online para adolescentes y adultos que desean comprender lo que están viviendo, recibir apoyo emocional y cuidar de su bienestar.</p>
-                <p>Conéctate desde un lugar donde te sientas cómodo, sin desplazamientos y con la flexibilidad de acceder a atención profesional desde donde estés.</p>
-                <p>No necesitas tener todo claro para comenzar. En la primera consulta exploraremos tu situación, escucharemos lo que necesitas y te orientaremos sobre los siguientes pasos.</p>
-                <h2>Empieza desde donde estés</h2>
+                <h2>Un espacio para volver a escucharte</h2>
+                <p>Atención psicológica online para personas adultas que quieren comprender lo que están viviendo, cuidar su salud emocional y encontrar nuevas formas de afrontar sus desafíos.</p>
+                <p>Conversemos con calma, sin juicios y a tu ritmo. No hace falta tener todas las respuestas para dar el primer paso.</p>
                 <div class="hero-buttons">
-                    <a href="https://calendar.app.google/aoNeNgeWQJg1RZPw7" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-primary">
-                        <i data-lucide="calendar-days" aria-hidden="true"></i> Horarios disponibles
-                    </a>
-                    <a href="https://wa.me/50362631168" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-secondary">
-                        <i data-lucide="message-circle" aria-hidden="true"></i> Contactar
-                    </a>
+                    <a href="#contacto" class="btn btn-lg btn-primary"><i data-lucide="calendar-days" aria-hidden="true"></i> Consultar disponibilidad</a>
+                    <a href="#terapia" class="btn btn-lg btn-secondary"><i data-lucide="arrow-down" aria-hidden="true"></i> Conocer el espacio</a>
                 </div>
             </div>
         </section>
 
-        <!-- 3. ÁREAS DE ATENCIÓN -->
-        <section class="areas-section container">
+        <section class="areas-section container" aria-labelledby="areas-title">
             <div class="section-title-block">
-                <h2>¿Qué podemos trabajar?</h2>
-                <p class="section-subtitle-text">Hay momentos en los que necesitamos comprender lo que sentimos, afrontar una situación difícil o encontrar nuevas formas de sentirnos mejor. Podemos trabajar juntos en aquello que te preocupa.</p>
+                <h2 id="areas-title">¿Qué te gustaría trabajar?</h2>
+                <p class="section-subtitle-text">Cada historia es distinta. La terapia puede ayudarte a poner en palabras lo que sientes y descubrir recursos que te acompañen en tu proceso.</p>
             </div>
 
-<div class="tags-grid">
+            <div class="tags-grid">
                 <div class="area-tag"><i data-lucide="brain" aria-hidden="true"></i><span>Ansiedad y preocupaciones</span></div>
-                <div class="area-tag"><i data-lucide="cloud-lightning" aria-hidden="true"></i><span>Estrés y sobrecarga</span></div>
+                <div class="area-tag"><i data-lucide="cloud-lightning" aria-hidden="true"></i><span>Estrés y agotamiento</span></div>
                 <div class="area-tag"><i data-lucide="cloud" aria-hidden="true"></i><span>Tristeza y desánimo</span></div>
-                <div class="area-tag"><i data-lucide="heart" aria-hidden="true"></i><span>Autoestima y amor propio</span></div>
-                <div class="area-tag"><i data-lucide="heart-crack" aria-hidden="true"></i><span>Duelo y pérdidas</span></div>
-                <div class="area-tag"><i data-lucide="activity" aria-hidden="true"></i><span>Gestión de las emociones</span></div>
-                <div class="area-tag"><i data-lucide="users" aria-hidden="true"></i><span>Problemas familiares</span></div>
+                <div class="area-tag"><i data-lucide="heart" aria-hidden="true"></i><span>Autoestima y autocuidado</span></div>
+                <div class="area-tag"><i data-lucide="heart-crack" aria-hidden="true"></i><span>Duelo y cambios vitales</span></div>
+                <div class="area-tag"><i data-lucide="activity" aria-hidden="true"></i><span>Gestión de emociones</span></div>
+                <div class="area-tag"><i data-lucide="users" aria-hidden="true"></i><span>Relaciones y límites</span></div>
                 <div class="area-tag"><i data-lucide="message-circle" aria-hidden="true"></i><span>Dificultades de pareja</span></div>
-                <div class="area-tag"><i data-lucide="shield-question" aria-hidden="true"></i><span>Inseguridad y dudas personales</span></div>
-                <div class="area-tag"><i data-lucide="refresh-cw" aria-hidden="true"></i><span>Cambios importantes en la vida</span></div>
-                <div class="area-tag"><i data-lucide="moon" aria-hidden="true"></i><span>Problemas para dormir</span></div>
-                <div class="area-tag"><i data-lucide="hand-heart" aria-hidden="true"></i><span>Soledad y falta de apoyo</span></div>
-                <div class="area-tag"><i data-lucide="messages-square" aria-hidden="true"></i><span>Conflictos interpersonales</span></div>
-                <div class="area-tag"><i data-lucide="compass" aria-hidden="true"></i><span>Decisiones difíciles</span></div>
+                <div class="area-tag"><i data-lucide="refresh-cw" aria-hidden="true"></i><span>Transiciones y decisiones</span></div>
+                <div class="area-tag"><i data-lucide="moon" aria-hidden="true"></i><span>Descanso y sueño</span></div>
+                <div class="area-tag"><i data-lucide="hand-heart" aria-hidden="true"></i><span>Soledad y apoyo emocional</span></div>
                 <div class="area-tag"><i data-lucide="sprout" aria-hidden="true"></i><span>Crecimiento personal</span></div>
             </div>
 
             <div class="areas-footer-card">
-                <p>¿No encuentras aquí lo que estás viviendo? Cada experiencia es diferente. Puedes contarnos qué te preocupa, aunque todavía no sepas cómo explicarlo.</p>
-                <p class="highlight-text">No necesitas tener todas las respuestas para comenzar. Exploraremos tu situación y valoraremos juntos cómo podemos ayudarte.</p>
-                <p class="highlight-text test-invitation"><strong>¿No sabes por dónde empezar?</strong> Si deseas un panorama inicial, realiza nuestra evaluación confidencial para identificar si estás experimentando síntomas relacionados con las condiciones de salud mental más frecuentes.</p>
-
+                <p>¿No encuentras aquí lo que estás viviendo? También podemos conversar sobre aquello que te cuesta explicar.</p>
+                <p class="highlight-text">Un primer paso puede ser simplemente hablar de cómo te has sentido últimamente.</p>
+                <p class="highlight-text test-invitation"><strong>¿Quieres hacer una pausa para ti?</strong> Responde cinco preguntas breves para reflexionar sobre tu bienestar reciente.</p>
                 <button type="button" onclick="abrirTestModal()" class="area-test-button">
                     <i data-lucide="clipboard-check" aria-hidden="true"></i>
-                    Iniciar test de bienestar | Psyche
+                    Explorar mi bienestar (2 minutos)
                 </button>
             </div>
         </section>
-        <!-- 4. TERAPIA ONLINE -->
+
         <section class="terapia-section container" id="terapia">
             <div class="section-title-block">
                 <h2>Terapia psicológica online</h2>
-                <h3>¿Como funciona?</h3>
+                <p class="section-subtitle-text">Un acompañamiento cercano y confidencial, desde un espacio donde te sientas en calma.</p>
             </div>
-
             <div class="cards-triple-grid">
-                <!-- Tarjeta 1: Información General -->
                 <div class="glass-card info-card">
-                    <p>Las sesiones se realizan de manera individual mediante videollamada, desde un espacio privado y tranquilo.</p>
-                    <p>La atención está dirigida a adolescentes y adultos.</p>
-                    <p>La primera consulta permite conocer tu situación y establecer qué deseas trabajar. A partir de ello, el proceso puede continuar en diferentes modalidades de atención de acuerdo con tus necesidades y objetivos.</p>
+                    <h3>Un espacio para ti</h3>
+                    <p>Las sesiones individuales se realizan por videollamada. Puedes conectarte desde un lugar privado y cómodo.</p>
+                    <p>En el primer encuentro hablaremos de lo que necesitas y resolveremos tus dudas, sin compromiso de continuar.</p>
                 </div>
-
-                <!-- Tarjeta 2: Características de la Modalidad -->
                 <div class="glass-card features-card">
+                    <h3>La modalidad</h3>
                     <ul class="features-list">
-                        <li><strong>Modalidad:</strong> Online</li>
                         <li><strong>Atención:</strong> Individual</li>
-                        <li><strong>Población:</strong> Adolescentes y adultos</li>
+                        <li><strong>Modalidad:</strong> Online</li>
                         <li><strong>Idioma:</strong> Español</li>
-                        <li><strong>Duración de sesión:</strong> 60 minutos</li>
+                        <li><strong>Duración:</strong> 50 minutos</li>
+                        <li><strong>Frecuencia:</strong> A acordar contigo</li>
                     </ul>
                 </div>
-
-                <!-- Tarjeta 3: Precios y Conversión -->
                 <div class="glass-card price-card">
-                    <h3>Primera consulta psicológica</h3>
-                    <div class="price-main">$15 <span class="currency">USD</span></div>
-                    
-                    <div class="flag-prices">
-                        <div class="flag-item">
-                            <svg class="country-flag" viewBox="0 0 30 20" role="img" aria-label="Bandera de México">
-                                <rect width="10" height="20" fill="#006847"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#ce1126"/>
-                                <circle cx="15" cy="10" r="1.5" fill="#8c6b2f"/>
-                            </svg>
-                            <span>$275.00 MXN</span>
-                        </div>
-                        <div class="flag-item">
-                            <svg class="country-flag" viewBox="0 0 30 20" role="img" aria-label="Bandera de Costa Rica">
-                                <rect width="30" height="20" fill="#fff"/><rect width="30" height="3" fill="#002b7f"/><rect y="5" width="30" height="10" fill="#ce1126"/><rect y="17" width="30" height="3" fill="#002b7f"/>
-                            </svg>
-                            <span>₡10,500.00 CRC</span>
-                        </div>
-                        <div class="flag-item">
-                            <svg class="country-flag" viewBox="0 0 30 20" role="img" aria-label="Bandera de Colombia">
-                                <rect width="30" height="10" fill="#fcd116"/><rect y="10" width="30" height="5" fill="#003893"/><rect y="15" width="30" height="5" fill="#ce1126"/>
-                            </svg>
-                            <span>$49,500.00 COP</span>
-                        </div>
-                        <div class="flag-item">
-                            <svg class="country-flag" viewBox="0 0 30 20" role="img" aria-label="Bandera de Argentina">
-                                <rect width="30" height="20" fill="#fff"/><rect width="30" height="6.67" fill="#74acdf"/><rect y="13.33" width="30" height="6.67" fill="#74acdf"/>
-                                <circle cx="15" cy="10" r="2" fill="#f6b40e"/>
-                            </svg>
-                            <span>$30.000 ARS</span>
-                        </div>
-                        <div class="flag-item">
-                            <svg class="country-flag" viewBox="0 0 30 20" role="img" aria-label="Bandera de España">
-                                <rect width="30" height="20" fill="#c60b1e"/><rect y="5" width="30" height="10" fill="#ffc400"/>
-                            </svg>
-                            <span>€25,00</span>
-                        </div>
-                        <div class="flag-item">
-                            <svg class="country-flag" viewBox="0 0 30 20" role="img" aria-label="Bandera de Estados Unidos">
-                                <rect width="30" height="20" fill="#fff"/>
-                                <path fill="#b22234" d="M0 0h30v1.54H0zm0 3.08h30v1.54H0zm0 3.08h30V7.7H0zm0 3.08h30v1.54H0zm0 3.08h30v1.54H0zm0 3.08h30v1.54H0zm0 3.08h30V20H0z"/>
-                                <rect width="13" height="10.8" fill="#3c3b6e"/>
-                            </svg>
-                            <span>$25.00</span>
-                        </div>
-                    </div>
-
-                    <p class="promo-note">Precio promocional en primera sesión</p>
-                    <p class="price-desc">Una primera sesión para conversar sobre lo que estás viviendo, conocer tu situación y definir cómo puedo acompañarte.</p>
-                    
-                    <a href="https://calendar.app.google/aoNeNgeWQJg1RZPw7" target="_blank" rel="noopener noreferrer" class="btn btn-md btn-primary btn-full"><i data-lucide="calendar-days" aria-hidden="true"></i> Reservar primera consulta</a>
-                    
-                    <span class="price-sub-discreet">Sesiones posteriores: $30 USD - $50 USD · 60 min.</span>
+                    <h3>Primera conversación</h3>
+                    <div class="price-main"><span class="currency">Conoce el espacio</span></div>
+                    <p class="promo-note">Te explicaré cómo trabajo y escucharemos qué necesitas.</p>
+                    <p class="price-desc">Consulta disponibilidad, honorarios y opciones de atención antes de reservar.</p>
+                    <a href="#contacto" class="btn btn-md btn-primary btn-full"><i data-lucide="mail" aria-hidden="true"></i> Solicitar información</a>
+                    <span class="price-sub-discreet">Sin compromiso; cada proceso se acuerda de forma individual.</span>
                 </div>
             </div>
         </section>
 
-        <!-- 5. ¿CÓMO FUNCIONA? -->
         <section class="steps-section container">
             <div class="section-title-block">
                 <span class="section-tag">TU PRIMER PASO</span>
-                <h2>Comenzar es más sencillo de lo que imaginas</h2>
-                <p class="section-subtitle-text">Un proceso pensado para que puedas dar el primer paso a tu ritmo, con orientación profesional y sin presión.</p>
+                <h2>Empezar puede ser sencillo</h2>
+                <p class="section-subtitle-text">Avanza a tu ritmo y decide qué necesitas en cada momento.</p>
             </div>
-
             <div class="steps-grid">
                 <div class="step-card">
-                    <div class="step-heading">
-                        <span class="step-num">PASO 01</span>
-                        <h3>Reserva tu primera consulta</h3>
-                    </div>
-                    <p>Elige el día y horario que mejor se adapte a ti. Podrás reservar tu espacio de atención online de forma sencilla.</p>
+                    <div class="step-heading"><span class="step-num">PASO 01</span><h3>Escríbeme</h3></div>
+                    <p>Cuéntame qué tipo de atención estás buscando y resolveré tus dudas iniciales.</p>
                 </div>
                 <div class="step-card">
-                    <div class="step-heading">
-                        <span class="step-num">PASO 02</span>
-                        <h3>Hablemos de lo que estás viviendo</h3>
-                    </div>
-                    <p>En la primera consulta conversaremos sobre tu situación, tus inquietudes y aquello que te gustaría comprender o mejorar.</p>
+                    <div class="step-heading"><span class="step-num">PASO 02</span><h3>Encontramos un horario</h3></div>
+                    <p>Revisaremos la disponibilidad, la modalidad y los honorarios antes de reservar.</p>
                 </div>
                 <div class="step-card">
-                    <div class="step-heading">
-                        <span class="step-num">PASO 03</span>
-                        <h3>Identifiquemos qué necesitas</h3>
-                    </div>
-                    <p>Exploraremos tus necesidades y las opciones de acompañamiento que podrían ser adecuadas para tu situación.</p>
+                    <div class="step-heading"><span class="step-num">PASO 03</span><h3>Nos conocemos</h3></div>
+                    <p>En la primera sesión conversaremos sobre lo que te trae y qué esperas del espacio.</p>
                 </div>
                 <div class="step-card">
-                    <div class="step-heading">
-                        <span class="step-num">PASO 04</span>
-                        <h3>Decide cómo continuar</h3>
-                    </div>
-                    <p>Si deseas seguir, acordaremos los objetivos y los próximos pasos según tus necesidades. Tú podrás decidir cómo avanzar.</p>
+                    <div class="step-heading"><span class="step-num">PASO 04</span><h3>Decides cómo seguir</h3></div>
+                    <p>Si te resulta útil, acordaremos objetivos y próximos pasos en conjunto.</p>
                 </div>
             </div>
-
             <div class="steps-footer">
-                <p>«Tu proceso, tus tiempos y tus decisiones. Te acompañaré con orientación profesional y respeto por lo que necesitas.»</p>
-                <a href="https://calendar.app.google/aoNeNgeWQJg1RZPw7" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-primary">
-                    Quiero comenzar <i data-lucide="arrow-right" aria-hidden="true"></i>
-                </a>
+                <p>Tu proceso, tus tiempos y tus decisiones. Estoy aquí para escucharte.</p>
+                <a href="#contacto" class="btn btn-lg btn-primary">Quiero conversar <i data-lucide="arrow-right" aria-hidden="true"></i></a>
             </div>
         </section>
 
-        <!-- 7. SOBRE EL PSICÓLOGO -->
         <section class="about-section container" id="sobre-mi">
             <div class="about-main-card glass-card">
                 <div class="about-grid">
                     <div class="about-text-content">
                         <span class="section-tag">SOBRE MÍ</span>
-                        <p class="quote">"Todos merecemos un espacio donde ser escuchados, sentirnos comprendidos y aprender a cuidar de nosotros mismos. Tú también lo mereces"</p>
+                        <p class="quote">“Pedir apoyo no significa tener que poder con todo. A veces, empezar es darte permiso para hablar.”</p>
                     </div>
                     <div class="about-profile">
                         <div class="about-img-wrapper">
-                            <img src="profile.jpg" alt="Adonis Lozano - Psicólogo" class="about-img" loading="lazy" decoding="async">
+                            <img src="profile.jpg" alt="Retrato de Valeria Montes, psicóloga" class="about-img" loading="lazy" decoding="async">
                         </div>
                         <div class="about-identity">
-                            <h2>Adonis Lozano</h2>
-                            <span class="about-title-sub">Psicólogo</span>
+                            <h2>Valeria Montes</h2>
+                            <span class="about-title-sub">Psicóloga</span>
                         </div>
                     </div>
                     <div class="about-biography">
-                        <p>Como psicólogo, mi propósito es ofrecerte un espacio profesional, respetuoso y confidencial donde puedas expresarte con libertad, explorar lo que estás viviendo y comprender mejor tus emociones, pensamientos y experiencias.</p>
-                        <p>Cada persona tiene una historia y necesidades diferentes. Por eso, busco acompañarte sin juicios, respetando tu ritmo y ayudándote a identificar herramientas y nuevas perspectivas que puedan contribuir a tu bienestar emocional.</p>
-                        <p>No necesitas tener todo claro para comenzar. Podemos empezar por aquello que hoy te preocupa y avanzar paso a paso.</p>
-                        <p class="about-highlight">Creo que comprender lo que sentimos es un primer paso para generar cambios significativos en nuestra vida.</p>
+                        <p>Soy psicóloga y ofrezco un espacio de escucha respetuoso, cálido y confidencial. Mi intención es acompañarte a comprender lo que estás viviendo y reconocer tus propios recursos.</p>
+                        <p>Creo en una terapia construida en conjunto, con objetivos que tengan sentido para ti y un ritmo que podamos conversar.</p>
+                        <p>No necesitas saber exactamente qué decir. Podemos comenzar por aquello que hoy ocupa tus pensamientos.</p>
+                        <p class="about-highlight">Mi forma de trabajar parte de la escucha, el respeto por tu historia y el cuidado de tu autonomía.</p>
                     </div>
                 </div>
             </div>
-                        <!-- Bloque de Modalidades de Atención -->
             <div class="services-block">
-                <h3>Servicios y modalidades de atención psicológica</h3>
-                <p class="services-intro">Cada persona vive situaciones diferentes y necesita un tipo de apoyo particular. En la primera consulta exploraremos tu situación para orientarte sobre la modalidad más adecuada. No necesitas saber cuál elegir antes de comenzar.</p>
-                <p class="services-intro" style="font-size: .95rem; font-style: italic; margin-top: -10px; margin-bottom: 48px;">
-                    Las duraciones y frecuencias son orientativas y pueden variar según tus necesidades y la complejidad de cada caso.
-                </p>
-                
+                <h3>Formas de acompañamiento</h3>
+                <p class="services-intro">La propuesta se adapta a lo que buscas. En una primera conversación podemos aclarar tus preguntas y valorar si este espacio es adecuado para ti.</p>
                 <div class="services-grid">
-                    <!-- 1. Terapia psicológica -->
                     <div class="glass-card service-item-card">
-                        <div class="service-header">
-                            <span class="service-index">01</span>
-                            <h4>Terapia psicológica</h4>
-                        </div>
-                        <p class="target-user"><strong>¿Para quién es?</strong> Para quienes desean trabajar una dificultad emocional o psicológica mediante un proceso estructurado.</p>
-                        <p class="examples"><strong>Ejemplos:</strong> dificultades persistentes de ansiedad o depresión, manejo de emociones, problemas de autoestima, dificultades en las relaciones o trabajo sobre objetivos personales.</p>
-                        <div class="service-meta">
-                            <span><strong>Duración orientativa:</strong> 6–12 sesiones iniciales</span>
-                            <span><strong>Frecuencia:</strong> Semanal</span>
-                            <span><strong>Sesión:</strong> 50 minutos</span>
-                        </div>
+                        <div class="service-header"><span class="service-index">01</span><h4>Proceso terapéutico</h4></div>
+                        <p class="target-user">Un espacio periódico para comprender tus emociones, revisar patrones y trabajar en objetivos personales.</p>
+                        <p class="examples"><strong>Podemos conversar sobre:</strong> ansiedad, ánimo, autoestima, relaciones, cambios y autocuidado.</p>
+                        <div class="service-meta"><span><strong>Modalidad:</strong> Individual y online</span><span><strong>Frecuencia:</strong> Acordada en conjunto</span></div>
                     </div>
-
-                    <!-- 2. Asesoría psicológica -->
                     <div class="glass-card service-item-card">
-                        <div class="service-header">
-                            <span class="service-index">02</span>
-                            <h4>Asesoría psicológica</h4>
-                        </div>
-                        <p class="target-user"><strong>¿Para quién es?</strong> Para quienes necesitan orientación profesional sobre una situación concreta, sin iniciar necesariamente una terapia.</p>
-                        <p class="examples"><strong>Ejemplos:</strong> dudas sobre si necesitan atención psicológica o psiquiátrica, preocupación por la situación emocional de un familiar, dificultades para tomar una decisión o necesidad de comprender mejor lo que están viviendo.</p>
-                        <div class="service-meta">
-                            <span><strong>Duración orientativa:</strong> 1–3 sesiones</span>
-                            <span><strong>Frecuencia:</strong> Según la necesidad de orientación</span>
-                        </div>
+                        <div class="service-header"><span class="service-index">02</span><h4>Orientación psicológica</h4></div>
+                        <p class="target-user">Una consulta para ordenar una situación concreta y explorar alternativas de apoyo.</p>
+                        <p class="examples"><strong>Puede ser útil para:</strong> tomar decisiones, afrontar una transición o resolver dudas sobre iniciar terapia.</p>
+                        <div class="service-meta"><span><strong>Modalidad:</strong> Online</span><span><strong>Duración:</strong> A consultar</span></div>
                     </div>
-
-                    <!-- 3. Intervención psicológica en crisis -->
-                    <div class="glass-card service-item-card text-alert-card">
-                        <div class="service-header">
-                            <span class="service-index">03</span>
-                            <h4>Intervención psicológica en crisis</h4>
-                        </div>
-                        <p class="target-user"><strong>¿Para quién es?</strong> Para quienes atraviesan una situación emocional intensa y necesitan apoyo para afrontar el momento presente.</p>
-                        <p class="examples"><strong>Ejemplos:</strong> duelo reciente, crisis de ansiedad o ataque de pánico, una ruptura difícil, una noticia inesperada o una situación de estrés intenso.</p>
-                        <div class="service-meta">
-                            <span><strong>Duración orientativa:</strong> Variable; puede requerir entre 1 y 6 sesiones</span>
-                            <span><strong>Frecuencia:</strong> Según las necesidades inmediatas</span>
-                        </div>
-                        <p class="emergency-notice">Si existe peligro inmediato o se necesita atención urgente presencial, es necesario acudir a los servicios de emergencia.</p>
-                    </div>
-
-                    <!-- 4. Acompañamiento psicológico -->
                     <div class="glass-card service-item-card">
-                        <div class="service-header">
-                            <span class="service-index">04</span>
-                            <h4>Acompañamiento psicológico</h4>
-                        </div>
-                        <p class="target-user"><strong>¿Para quién es?</strong> Para quienes desean contar con un espacio flexible de apoyo, sin seguir necesariamente un plan terapéutico estructurado.</p>
-                        <p class="examples"><strong>Ejemplos:</strong> Desarrollo personal, autoconocimiento, toma de decisiones, cambios vitales o seguimiento post tratamiento, acompañamiento ocasional de situaciones emocionales.</p>
-                        <div class="service-meta">
-                            <span><strong>Duración:</strong> Según las necesidades acordadas</span>
-                            <span><strong>Frecuencia orientativa:</strong> 1 a 2 veces al mes (recomendado).</span>
-                        </div>
+                        <div class="service-header"><span class="service-index">03</span><h4>Primera consulta</h4></div>
+                        <p class="target-user">Un encuentro inicial para conocernos, conversar sobre lo que necesitas y decidir si quieres continuar.</p>
+                        <p class="examples"><strong>Sin presión:</strong> puedes hacer preguntas y valorar el espacio con tranquilidad.</p>
+                        <div class="service-meta"><span><strong>Modalidad:</strong> Online</span><span><strong>Reserva:</strong> Por correo electrónico</span></div>
                     </div>
-                </div>
-
-                <div class="services-action flex-center" style="margin-top: 30px;">
-                    <span>¿No sabes cuál elegir?</span>
-                    <a href="https://api.whatsapp.com/send/?phone=50362631168&text=%C2%A1Hola%21%20%F0%9F%91%8B%2C%20encontr%C3%A9%20la%20p%C3%A1gina%20web%20de%20Psyche%20y%20me%20gustar%C3%ADa%20dar%20el%20primer%20paso%20para%20cuidar%20mi%20bienestar%20emocional.%20%F0%9F%92%9A%20Quisiera%20conocer%20m%C3%A1s%20sobre%20sus%20servicios%20de%20atenci%C3%B3n%20psicol%C3%B3gica%20online.%20%F0%9F%8C%BF&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="btn btn-md btn-secondary">
-                        <i data-lucide="message-circle" aria-hidden="true"></i> Agenda tu primera consulta
-                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- 8. AGENDAR CITA -->
-
-        <section class="booking-section container">
+        <section class="booking-section container" id="contacto">
             <div class="booking-wrapper glass-card heavy-glass">
                 <div class="section-title-block">
-                    <h2>Agendar cita</h2>
-                    <p class="section-subtitle-text">Elige la forma que prefieras para ponerte en contacto o programar tu primera consulta.</p>
+                    <h2>Hablemos</h2>
+                    <p class="section-subtitle-text">Escríbeme para consultar disponibilidad, honorarios o resolver cualquier duda antes de dar el primer paso.</p>
                 </div>
-
                 <div class="booking-channels-grid">
-
-                    <!-- WhatsApp -->
-                    <div class="channel-card">
-                        <div class="channel-icon"><i data-lucide="message-circle" aria-hidden="true"></i></div>
-                        <h3>WhatsApp</h3>
-                        <span class="channel-data-visible">Inicia una conversación</span>
-                        <a href="https://api.whatsapp.com/send/?phone=50362631168&text=%C2%A1Hola%21%20%F0%9F%91%8B%20Vi%20la%20p%C3%A1gina%20web%20de%20tu%20consultorio%20y%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20psicol%C3%B3gica.%20%F0%9F%92%9A&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary btn-full channel-btn-action">Enviar mensaje</a>
-                    </div>
-
-                    <!-- Email -->
                     <div class="channel-card">
                         <div class="channel-icon"><i data-lucide="mail" aria-hidden="true"></i></div>
-                        <h3>Email</h3>
-                        <span class="channel-data-visible email-text">psyche.adonis@gmail.com</span>
-                        <a href="mailto:psyche.adonis@gmail.com" class="btn btn-sm btn-secondary btn-full channel-btn-action">Enviar correo</a>
+                        <h3>Correo electrónico</h3>
+                        <span class="channel-data-visible email-text">hola@tudominio.com</span>
+                        <a href="mailto:hola@tudominio.com" data-contact-email class="btn btn-sm btn-secondary btn-full channel-btn-action">Enviar un mensaje</a>
                     </div>
-
-                    <!-- Programar Cita Destacada -->
                     <div class="channel-card featured-channel">
-                        <div class="featured-badge">Calendario</div>
+                        <div class="featured-badge">Primer paso</div>
                         <div class="channel-icon"><i data-lucide="calendar-days" aria-hidden="true"></i></div>
-                        <h3>Programar cita</h3>
-                        <span class="channel-data-visible">Elegir día y horario</span>
-                        <a href="https://calendar.app.google/aoNeNgeWQJg1RZPw7" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary btn-full channel-btn-action"><i data-lucide="calendar-days" aria-hidden="true"></i> Ver horarios disponibles</a>
+                        <h3>Solicitar una cita</h3>
+                        <span class="channel-data-visible">Consulta horarios y honorarios</span>
+                        <a href="mailto:hola@tudominio.com?subject=Consulta%20de%20primera%20cita" data-booking-link class="btn btn-sm btn-primary btn-full channel-btn-action">Consultar disponibilidad</a>
+                    </div>
+                    <div class="channel-card">
+                        <div class="channel-icon"><i data-lucide="heart-handshake" aria-hidden="true"></i></div>
+                        <h3>Un espacio confidencial</h3>
+                        <span class="channel-data-visible">Atención online en español</span>
+                        <a href="mailto:hola@tudominio.com?subject=Consulta%20sobre%20terapia" data-contact-email class="btn btn-sm btn-secondary btn-full channel-btn-action">Hacer una consulta</a>
                     </div>
                 </div>
+                <p class="contact-note">Por favor, no incluyas información médica o detalles personales sensibles en tu primer correo. Si necesitas ayuda urgente, contacta los servicios de emergencia de tu localidad.</p>
             </div>
         </section>
 
-
-
-
-                <!-- 9. PREGUNTAS FRECUENTES -->
         <section class="faq-section container" id="faq">
-            <div class="section-title-block">
-                <h2>Preguntas frecuentes</h2>
-            </div>
-
+            <div class="section-title-block"><h2>Preguntas frecuentes</h2></div>
             <div class="faq-accordion-container">
-                <!-- Pregunta 1 -->
                 <div class="faq-item-block">
-                    <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-answer-1">
-                        <span>¿Cómo sé si necesito atención psicológica?</span>
-                        <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
-                    </button>
-                    <div class="faq-panel" id="faq-answer-1">
-                        <div class="faq-content">
-                            <p>Si algo está afectando tu tranquilidad, tus relaciones o tu vida cotidiana, hablar con un profesional puede ayudarte a comprender mejor lo que ocurre y explorar opciones de apoyo. No necesitas estar pasando por algo grave para comenzar.</p>
-                        </div>
-                    </div>
+                    <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-answer-1"><span>¿Cómo sé si la terapia puede ayudarme?</span><i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i></button>
+                    <div class="faq-panel" id="faq-answer-1" hidden><div class="faq-content"><p>No hace falta esperar a estar en crisis. Si algo afecta tu bienestar, tus relaciones o tu vida diaria, conversar con una profesional puede ayudarte a comprenderlo y valorar opciones de apoyo.</p></div></div>
                 </div>
-
-                <!-- Pregunta 2 -->
                 <div class="faq-item-block">
-                    <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-answer-2">
-                        <span>¿Y si no sé cómo explicar lo que me pasa?</span>
-                        <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
-                    </button>
-                    <div class="faq-panel" id="faq-answer-2">
-                        <div class="faq-content">
-                            <p>No necesitas tener las palabras perfectas ni saber por dónde empezar. Podemos conversar sobre lo que te preocupa, cómo te has sentido últimamente y aquello que te llevó a buscar apoyo.</p>
-                        </div>
-                    </div>
+                    <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-answer-2"><span>¿Qué pasa si no sé por dónde empezar?</span><i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i></button>
+                    <div class="faq-panel" id="faq-answer-2" hidden><div class="faq-content"><p>Está bien no tenerlo claro. Podemos empezar hablando de cómo te has sentido y de lo que te gustaría que fuera diferente.</p></div></div>
                 </div>
-
-                <!-- Pregunta 3 -->
                 <div class="faq-item-block">
-                    <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-answer-3">
-                        <span>¿Qué servicios de atención psicológica ofrecen?</span>
-                        <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
-                    </button>
-                    <div class="faq-panel" id="faq-answer-3">
-                        <div class="faq-content">
-                            <p>Ofrecemos terapia psicológica, asesoría psicológica, intervención psicológica en crisis y acompañamiento psicológico. Si no sabes cuál necesitas, podemos explorar tu situación en la primera consulta y orientarte sobre las opciones más adecuadas.</p>
-                        </div>
-                    </div>
+                    <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-answer-3"><span>¿Cómo son las sesiones online?</span><i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i></button>
+                    <div class="faq-panel" id="faq-answer-3" hidden><div class="faq-content"><p>Nos encontramos por videollamada en un horario acordado. Busca un lugar privado y una conexión estable. Antes de reservar podemos conversar sobre la plataforma y resolver tus dudas.</p></div></div>
                 </div>
-
-                <!-- Pregunta 4 -->
                 <div class="faq-item-block">
-                    <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-answer-4">
-                        <span>¿Cómo se realizan las sesiones y qué pasa con mi privacidad?</span>
-                        <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
-                    </button>
-                    <div class="faq-panel" id="faq-answer-4">
-                        <div class="faq-content">
-                            <p>Las sesiones se realizan online mediante videollamada por WhatsApp, Google Meet u otra plataforma acordada. La atención se desarrolla bajo el principio de confidencialidad profesional, con las excepciones legales y de seguridad aplicables.</p>
-                        </div>
-                    </div>
+                    <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-answer-4"><span>¿Mis sesiones son confidenciales?</span><i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i></button>
+                    <div class="faq-panel" id="faq-answer-4" hidden><div class="faq-content"><p>La privacidad y la confidencialidad son parte esencial del espacio terapéutico, de acuerdo con las normas profesionales y legales aplicables. Podemos hablar de cómo se protegen tus datos antes de comenzar.</p></div></div>
                 </div>
-
-                <!-- Pregunta 5 -->
                 <div class="faq-item-block">
-                    <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-answer-5">
-                        <span>¿Cuánto cuesta una sesión psicológica?</span>
-                        <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
-                    </button>
-                    <div class="faq-panel" id="faq-answer-5">
-                        <div class="faq-content">
-                            <p>La primera sesión tiene un precio promocional de <strong>$15 USD</strong>. Las sesiones posteriores tienen un precio de referencia de <strong>$30 USD</strong>. El costo final puede variar según el país, el método de pago y la modalidad de atención. Te confirmaremos el precio antes de reservar.</p>
-                        </div>
-                    </div>
+                    <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-answer-5"><span>¿Cuánto cuesta una sesión?</span><i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i></button>
+                    <div class="faq-panel" id="faq-answer-5" hidden><div class="faq-content"><p>Los honorarios dependen de la modalidad y el lugar de atención. Escríbeme para conocer el costo actualizado antes de reservar.</p></div></div>
                 </div>
-
-                <!-- Pregunta 6 -->
                 <div class="faq-item-block">
-                    <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-answer-6">
-                        <span>¿Qué métodos de pago aceptan?</span>
-                        <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
-                    </button>
-                    <div class="faq-panel" id="faq-answer-6">
-                        <div class="faq-content">
-                            <p>Aceptamos pagos con tarjeta, PayPal, transferencias internacionales y servicios de remesas, según disponibilidad. Puedes consultarnos si prefieres utilizar un método de pago específico.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pregunta 7 -->
-                <div class="faq-item-block">
-                    <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-answer-7">
-                        <span>¿Puedo agendar si tengo horarios de trabajo complicados?</span>
-                        <i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i>
-                    </button>
-                    <div class="faq-panel" id="faq-answer-7">
-                        <div class="faq-content">
-                            <p>Sí. Puedes indicarnos los días y horarios que mejor se adapten a tu rutina. Revisaremos la disponibilidad para encontrar una alternativa conveniente.</p>
-                        </div>
-                    </div>
+                    <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-answer-6"><span>¿Debo comprometerme a un proceso largo?</span><i data-lucide="chevron-down" class="faq-icon" aria-hidden="true"></i></button>
+                    <div class="faq-panel" id="faq-answer-6" hidden><div class="faq-content"><p>No. La continuidad y los objetivos se conversan en conjunto. Puedes plantear tus dudas y decidir qué es adecuado para ti.</p></div></div>
                 </div>
             </div>
         </section>
 
-        <!-- 10. CIERRE -->
         <section class="closure-section container">
             <div class="closure-card glass-card">
                 <h2>Darte un espacio también es una forma de comenzar.</h2>
-                <p>No necesitas tener todas las respuestas para pedir apoyo. Podemos comenzar conversando sobre lo que estás viviendo.</p>
+                <p>No necesitas tener todas las respuestas para pedir apoyo. Podemos empezar con una conversación.</p>
                 <div class="closure-buttons">
-                    <a href="https://calendar.app.google/aoNeNgeWQJg1RZPw7" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-primary"><i data-lucide="calendar-days" aria-hidden="true"></i> Agendar cita</a>
-                    <a href="https://api.whatsapp.com/send/?phone=50362631168&text=%C2%A1Hola%21%20%F0%9F%91%8B%20Vi%20la%20p%C3%A1gina%20web%20de%20tu%20consultorio%20y%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20psicol%C3%B3gica.%20%F0%9F%92%9A&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-secondary">
-                        <i data-lucide="message-circle" aria-hidden="true"></i> WhatsApp
-                    </a>
-                    <a href="https://www.instagram.com/psyche._.a/" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-secondary"><i data-lucide="instagram" aria-hidden="true"></i> Follow Me</a>
+                    <a href="#contacto" class="btn btn-lg btn-primary"><i data-lucide="mail" aria-hidden="true"></i> Escribirme</a>
+                    <button type="button" onclick="abrirTestModal()" class="btn btn-lg btn-secondary"><i data-lucide="clipboard-check" aria-hidden="true"></i> Explorar mi bienestar</button>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer-bottom">
-        <p>&copy; 2026 PSYCHE - Centro de Bienestar Psicológico. Todos los derechos reservados.</p>
+        <p>&copy; <span id="currentYear"></span> PSYCHE | Psicología y bienestar emocional.</p>
+        <p>Este sitio ofrece información general y no sustituye atención psicológica ni servicios de emergencia.</p>
     </footer>
 
-    <!-- Scripts finales -->
     <script src="https://cdn.jsdelivr.net/npm/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
     <script src="script.js" defer></script>
     <script src="test-script.js" defer></script>

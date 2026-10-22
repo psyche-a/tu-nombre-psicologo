@@ -1,4 +1,28 @@
+window.SITE_CONFIG = Object.freeze({
+    contactEmail: 'hola@tudominio.com'
+});
+
 document.addEventListener('DOMContentLoaded', () => {
+    const currentYear = document.getElementById('currentYear');
+    if (currentYear) currentYear.textContent = String(new Date().getFullYear());
+
+    document.querySelectorAll('.email-text').forEach(element => {
+        element.textContent = window.SITE_CONFIG.contactEmail;
+    });
+
+    document.querySelectorAll('[data-contact-email]').forEach(link => {
+        const subject = link.getAttribute('data-contact-subject');
+        const query = subject ? `?subject=${encodeURIComponent(subject)}` : '';
+        link.setAttribute('href', `mailto:${window.SITE_CONFIG.contactEmail}${query}`);
+    });
+
+    document.querySelectorAll('[data-booking-link]').forEach(link => {
+        link.setAttribute(
+            'href',
+            `mailto:${window.SITE_CONFIG.contactEmail}?subject=${encodeURIComponent('Consulta de primera cita')}`
+        );
+    });
+
     if (window.lucide) {
         window.lucide.createIcons();
     } else {
@@ -59,12 +83,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 const otherPanel = otherItem.querySelector('.faq-panel');
 
                 if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
-                if (otherPanel) otherPanel.style.maxHeight = null;
+                if (otherPanel) {
+                    otherPanel.style.maxHeight = null;
+                    otherPanel.hidden = true;
+                }
             });
 
             if (shouldOpen) {
                 item.classList.add('active');
                 trigger.setAttribute('aria-expanded', 'true');
+                panel.hidden = false;
                 panel.style.maxHeight = `${panel.scrollHeight}px`;
             }
         });
